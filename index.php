@@ -19,9 +19,17 @@
     </head>
 
     <body>
- <div class="container">
+ <div class="container-fluid">
 
     <h1>Tere Github!</h1>
+
+    </div>
+
+
+    <div class="container" style="margin:auto; wight:50%;">
+
+    <h1>Tere Github!</h1>
+
 
     </div>
         <script
