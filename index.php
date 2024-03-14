@@ -17,13 +17,21 @@
             crossorigin="anonymous"
         />
 
-
         <style>
-        /* Kohandatud CSS stiilid */
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.5); /* rgba(0, 0, 0, 0.5) määrab musta värvi ja 50% läbipaistvuse */
-        }
-    </style>
+
+.taust {
+    background-color:red;
+    max-width: ;
+    
+
+
+}
+
+
+
+
+        </style>
+
 
 
 
@@ -33,52 +41,28 @@
 
 
 
-    <div class="container-fluid">
-
-        <header class="bg-primary text-white">
-            <div class="container">
-
-            <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">Minu Veebileht</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Avaleht</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Teenused</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Meist</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
-
-            </div>
+    <div class="container-fluid taust">
 
 
 
 
-            <!-- Header content here -->
-            <h1>This is the header</h1>
-        </header>
 
-        <div class="container">
-            <!-- Main content here -->
-            <p>This is the main content</p>
-        </div>
+
+
 
     </div>
-    </div>
+
+
+
+
+
+
+
+      
+       
+
+
+
 
 
 
