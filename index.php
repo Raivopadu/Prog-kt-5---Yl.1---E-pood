@@ -17,20 +17,8 @@
             crossorigin="anonymous"
         />
 
-        <style>
+        <link rel="stylesheet" href="stiil.css">
 
-.taust {
-    background-color:red;
-    max-width: ;
-    
-
-
-}
-
-
-
-
-        </style>
 
 
 
@@ -41,24 +29,73 @@
 
 
 
-    <div class="container-fluid taust">
+<div class="container-fluid taust">  <!--Tausta kontainer-->
 
 
+        <div class="container peamine"> <!--Põhi kontainer-->
 
 
+       <nav class="navbar navbar-expand-lg navbar-light ">
+
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">Raivo Padu</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tooted</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admin</a>
+        </li>
+
+        <li class="nav-item vert_keskel">
+            <a class="nav-link vert_keskel" href="#">
+                <img src="data/sb.png" alt="ostukorv" width="18px" height="18px">
+            </a>
+        </li>
 
 
-
-
+      </ul>
     </div>
 
 
+  </div>
+</nav>
 
 
 
 
 
-      
+
+
+        
+    
+    
+    </div> <!--Põhi kontaineri lõpp -->
+
+
+
+
+    </div> <!--Tausta kontaineri lõpp-->
+
+
+
+
+   
        
 
 

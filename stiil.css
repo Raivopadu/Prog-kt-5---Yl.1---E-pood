@@ -1,0 +1,21 @@
+.taust {
+    background-color: rgb(243, 167, 167);
+    max-width: auto;
+    height: 400px;
+}
+
+
+
+.peamine {
+
+    width: 70%;
+
+
+
+}
+
+.vert_keskel {
+    /* Ostukorvi ikoon vertiklaalselt keskele*/
+    display: flex;
+    align-items: center;
+}
