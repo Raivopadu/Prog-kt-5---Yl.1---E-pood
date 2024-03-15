@@ -2,9 +2,22 @@
 
 <body>
 
-<?php $page = "index"; ?>
+
+
+
+<?php
+
+if (!isset($_GET['leht'])) {
+
+    $_GET['leht'] = 'avaleht';
+}
+
+?>
 
 <?php include ("navbar.php");?>
+
+
+
 
 
 

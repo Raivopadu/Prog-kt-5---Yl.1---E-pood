@@ -1,12 +1,15 @@
 .taust {
-    background-color: rgb(243, 167, 167);
+    background-color: rgb(235, 204, 204);
     max-width: auto;
-    height: 400px;
+
+
+
 }
 
 
 
 .peamine {
+    /*Kõikide containerite laius*/
 
     width: 70%;
 
@@ -18,4 +21,21 @@
     /* Ostukorvi ikoon vertiklaalselt keskele*/
     display: flex;
     align-items: center;
+}
+
+
+.pilt {
+
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.tekst {
+    display: flex;
+    align-items: center;
+    background-color: black;
 }
