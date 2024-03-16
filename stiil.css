@@ -4,6 +4,7 @@
 
 
 
+
 }
 
 
@@ -24,14 +25,9 @@
 }
 
 
-.pilt {
-
-    max-width: 50%;
-    height: auto;
-    display: flex;
-    align-items: center;
-
-
+.suurus {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .tekst {

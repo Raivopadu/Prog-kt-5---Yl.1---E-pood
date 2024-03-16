@@ -57,35 +57,21 @@
 <!-- TEKST PÄISES, NUPP JA PILT -->
 
 
-<div class="container">
-
-<div class="grid">
+<div class="container" style="padding-top:5%">
   <div class="row">
-
-    <div class="col-md-6 tekst">
-
-      <h1 class="">Super ale <br>-20 % Kõik tooted!</h1>
-
-    
-
-      
-      <button class="btn btn-danger rounded-pill">Vaata pakkumisi! →</button>
-      
-    
+    <div class="col-md-6">
+      <div class="d-flex align-items-center h-100">
+        <div>
+          <h1>Super ale <br>-20 % Kõik tooted!</h1>
+          <button class="btn btn-danger rounded-pill">Vaata pakkumisi! →</button>
+        </div>
+      </div>
     </div>
-   
-
-    <div class="col-md-6 text-center">
-
-      <img src="data/image1.png" alt="Pilt" class="img-fluid pilt">
-
+    <div class="col-md-6 d-flex align-items-end justify-content-end h-100" style="text-align:right">
+      <img src="data/image1.png" alt="Pilt" class="image-fluid suurus"> 
     </div>
-
-  </div>
   </div>
 </div>
-
-
 
 
 
