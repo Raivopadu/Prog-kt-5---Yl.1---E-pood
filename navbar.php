@@ -62,7 +62,10 @@
     <div class="col-md-6">
       <div class="d-flex align-items-center h-100">
         <div>
-          <h1>Super ale <br>-20 % Kõik tooted!</h1>
+          <div class="h1">Super ale <br>-20 % Kõik tooted!</div>
+          
+          <div class="lead" style="margin-top:2%;margin-bottom:5%;">Kasuta ilma taustata pilti ja kindlasti võta kasutusse BS5!</div>
+          
           <button class="btn btn-danger rounded-pill">Vaata pakkumisi! →</button>
         </div>
       </div>

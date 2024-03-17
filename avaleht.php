@@ -1,8 +1,22 @@
 
 
-<div class="container peamine">
+<div class="container peamine text-center">
 
-<h1>Avaleht</h1>
+<div class="h2" style="margin-top:4%;margin-bottom:3%;">Parimad pakkumised</div>
+
+
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
 
 
 </div>
