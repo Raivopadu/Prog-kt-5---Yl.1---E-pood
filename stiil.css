@@ -1,4 +1,4 @@
-.taust {
+.taust { /*Päise taust*/
     background-color: rgb(235, 204, 204);
     max-width: auto;
 
@@ -33,7 +33,7 @@
     background-color: black;
 }
 
-.footer {
+.footer { /*jalus iga lehe all*/
 
 
     padding-top: 3%;
@@ -51,9 +51,14 @@
 
 */
 
+}
 
 
+.ruumi { /*Sisselogimis aknale ruumi ümber*/
 
 
+    padding-top: 5%;
+    padding-bottom: 5%;
 
 }
+
