@@ -45,7 +45,7 @@ if (isset($_GET['message'])) {
 
   </form>
 
-</div>
+
 
 
 
@@ -71,15 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['kustuta'])) {
         foreach ($valitud_tooted as $toode) {
             // Kood, mis kustutab toote vastavalt $toode
             // Näiteks:
-            // unset($tooted[$toode]);
+             unset($tooted[$toode]);
         }
         // Kood, mis salvestab muudetud andmed tooted.csv faili
         // Näiteks:
-        // $csv = fopen("tooted.csv", "w");
-        // foreach ($tooted as $toode) {
-        //     fputcsv($csv, $toode);
-        // }
-        // fclose($csv);
+         $csv = fopen("tooted.csv", "w");
+         foreach ($tooted as $toode) {
+             fputcsv($csv, $toode);
+         }
+         fclose($csv);
         echo '<div class="alert alert-success" role="alert">Valitud tooted on kustutatud!</div>';
     } else {
         echo '<div class="alert alert-warning" role="alert">Valige vähemalt üks toode, mida kustutada!</div>';
@@ -115,6 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['kustuta'])) {
     <?php endif; ?>
 </form>
 
+
+</div>
 
 
 <?php
