@@ -3,34 +3,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
     $tootenimi = $_POST['tootenimi'];
     $tootehind = $_POST['tootehind'];
-    $tootepilt = $_FILES['tootepilt']['name'];
-
+    $tootepilt = $_POST['tootepilt']; // Pildi nime saamine
     
-    $sihtkaust = "tooted/";
+    // Loome rea, mis sisaldab tootenime, tootehinna ja pildifaili nime
+    $rida = array($tootenimi, $tootehind, $tootepilt);
 
-    $sihtfail = $sihtkaust . basename($tootepilt);
+    // Avame CSV-faili lisamiseks
+    $csv = fopen("tooted.csv", "a");
 
+    // Lisame rea CSV-faili
+    fputcsv($csv, $rida);
 
-    if (move_uploaded_file($_FILES['tootepilt']['tmp_name'], $sihtfail)) {
+    // Sulgeme CSV-faili
+    fclose($csv);
 
-       
-        $rida = array($tootenimi, $tootehind, $tootepilt);
-
-        $csv = fopen("tooted.csv", "a");
-
-        fputcsv($csv, $rida);
-
-        fclose($csv);
-
-        header("Location: admin.php?message=Toode on edukalt lisatud!");
-        exit;
-        
-
-    } else {
-
-        header("Location: admin.php?message=Vabandame, toote lisamine ebaõnnestus!");
-        exit;
-        
-    }
+    // Suuname administraatori lehele, edastades sõnumi toote edukast lisamisest
+    header("Location: admin.php?message=jah");
+    exit;
+} else {
+    header("Location: admin.php?message=ei");
 }
 ?>
