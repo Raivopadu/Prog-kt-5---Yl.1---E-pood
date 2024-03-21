@@ -44,15 +44,10 @@
     background-color: black;
     color: white;
     text-align: center;
-    /*
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 
 
 
-*/
+
 
 }
 
@@ -70,4 +65,10 @@
 .ruumip {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.card,
+.card-body {
+    border: none !important;
+
 }

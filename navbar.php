@@ -29,7 +29,7 @@
 
        
         </li>
-        <li class="nav-item"> <!--Superglobaalne_masiivi_element-->
+        <li class="nav-item"> 
           <a href="index.php?leht=kontakt"  class="nav-link  <?php echo (isset($_GET['leht']) && $_GET['leht'] == 'kontakt') ? 'active' : ''; ?>">Kontakt</a>
         </li>
         <li class="nav-item">

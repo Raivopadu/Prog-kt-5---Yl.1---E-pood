@@ -10,14 +10,14 @@
 <div class="container">
     <div class="row">
         <?php
-        $row_count = 0; // Ridade loendur
+        $row_count = 0; 
         if (($handle = fopen("tooted.csv", "r")) !== false) {
             while (($data = fgetcsv($handle, 1000, ",")) !== false) {
-                $row_count++; // Suurendame rea loendurit
+                $row_count++; 
 
-                // Kui ridade loendur on suurem kui 1 ja jagub 4-ga (iga nelja kaardi järel tuleb uus rida)
+             
                 if ($row_count > 1 && ($row_count - 1) % 4 == 0) {
-                    echo '</div><div class="row">'; // Uus rida
+                    echo '</div><div class="row">'; 
                 }
         ?>
                 <div class="col-md-3">

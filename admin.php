@@ -66,9 +66,9 @@ include_once('navbar.php');
     <?php
 
 
-// Funktsioon, mis laeb tooted.csv failist andmed
+// laeb tooted.csv failist andmed
 function laeToodeteAndmed() {
-    $tooted = array(); // Siia salvestame tooted.csv failist saadud andmed
+    $tooted = array(); 
     if (($handle = fopen("tooted.csv", "r")) !== false) {
         while (($data = fgetcsv($handle, 1000, ",")) !== false) {
             $tooted[] = $data;
@@ -78,9 +78,9 @@ function laeToodeteAndmed() {
     return $tooted;
 }
 
-// Funktsioon, mis kuvab tooted tabelis ja lisab valikuvõimaluse kustutamiseks
+// kuvab tooted tabelis 
 function kuvaTooted() {
-    $tooted = laeToodeteAndmed(); // Lae tooted.csv failist andmed
+    $tooted = laeToodeteAndmed(); 
     if (!empty($tooted)) {
         echo '<table class="table">';
         echo '<thead><tr><th></th><th>Tootenimi</th><th>Tootehind</th><th>Tootepilt</th></tr></thead>';
@@ -96,7 +96,7 @@ function kuvaTooted() {
         echo '</tbody>';
         echo '</table>';
     } else {
-        // Kui tooteid pole saadaval, kuvatakse vastav hoiatussõnum
+       
         echo '<div class="alert alert-info" role="alert">Tooteid pole saadaval.</div>';
     }
 }
@@ -141,6 +141,3 @@ function kuvaTooted() {
 
 </div>
 
-<?php
-include_once('footer.php');
-?>
